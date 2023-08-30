@@ -10,6 +10,7 @@
 
         public float Estoque { get; set; }
         public DateTime DataCadastro { get; set; }
+        public int CategoriaId { get; set; }
         public Categoria? Tipocategoria { get; set; }
     }
 }

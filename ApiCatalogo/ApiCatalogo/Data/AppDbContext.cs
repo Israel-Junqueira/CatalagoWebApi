@@ -14,7 +14,7 @@ namespace ApiCatalogo.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           
+         
         }
     }
 }
