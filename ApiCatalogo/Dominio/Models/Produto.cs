@@ -10,5 +10,6 @@
 
         public float Estoque { get; set; }
         public DateTime DataCadastro { get; set; }
+        public Categoria? Tipocategoria { get; set; }
     }
 }

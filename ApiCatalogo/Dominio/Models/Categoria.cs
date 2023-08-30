@@ -8,6 +8,6 @@ namespace ApiCatalogo.Models
         public string? Nome { get; set; }
         public string?  ImagemUrl { get; set; }
 
-        public IEnumerable<Produto>? produtos { get; set; }
+        public ICollection<Produto>? produtos { get; set; }
     }
 }
