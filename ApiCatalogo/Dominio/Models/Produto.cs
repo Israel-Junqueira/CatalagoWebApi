@@ -1,4 +1,7 @@
-﻿namespace ApiCatalogo.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace ApiCatalogo.Models
 {
     public class Produto
     {
@@ -10,7 +13,10 @@
 
         public float Estoque { get; set; }
         public DateTime DataCadastro { get; set; }
+        [JsonIgnore]
         public int CategoriaId { get; set; }
+        [NotMapped]
+        [JsonIgnore]
         public Categoria? Tipocategoria { get; set; }
     }
 }

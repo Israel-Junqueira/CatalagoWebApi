@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace ApiCatalogo.Models
 {
@@ -8,6 +9,7 @@ namespace ApiCatalogo.Models
         public string? Nome { get; set; }
         public string?  ImagemUrl { get; set; }
 
+        [JsonIgnore]
         public ICollection<Produto>? produtos { get; set; }
     }
 }
